@@ -9,7 +9,7 @@
 
 How is the UK car market shifting towards battery-electric vehicles, and how is BYD's registration presence changing?
 
-This project combines spreadsheet exploration, Python preparation, local SQL Server validation and Power BI reporting. The first reporting milestone focuses on national BEV adoption, selected-brand registration comparisons and BYD's growth and fuel mix. Broader questions about JLR, Aston Martin, model-level comparisons and economic contribution remain outside the current dashboard's completed analysis.
+This project combines spreadsheet exploration, Python preparation, Azure Blob Storage, local SQL Server validation and Power BI reporting. The intended cloud path also includes Azure SQL and automated refresh; those components remain in development. The first reporting milestone focuses on national BEV adoption, selected-brand registration comparisons and BYD's growth and fuel mix. Broader questions about JLR, Aston Martin, model-level comparisons and economic contribution remain outside the current dashboard's completed analysis.
 
 ### Work completed
 
@@ -23,6 +23,20 @@ This project combines spreadsheet exploration, Python preparation, local SQL Ser
 | Azure Blob | Created private source/reporting containers and manually uploaded the input CSV and three reporting CSVs | Completed as a storage step |
 | Azure SQL and automated refresh | Cloud database deployment encountered subscription/region restrictions; reporting continued using local SQL Server | Unfinished |
 | Publication | Preserved a local Stage 1 PBIX and versioned the original scripts, map, report and project explanation | In progress |
+
+### Azure cloud storage and delivery architecture
+
+Azure Blob Storage is a completed part of Stage 1: two private containers hold the prepared input CSV and three reporting outputs, uploaded manually on 11 November 2026.
+
+| Area | Completed work | Current boundary |
+|---|---|---|
+| Cloud storage | Private source and reporting containers; four uploaded CSVs | Manual storage step |
+| Database and report | Local SQL Server validation and Power BI Import model | Local database connection |
+| Azure SQL and refresh | Deployment attempts and resource-provider troubleshooting | Subscription/region blocker; not deployed or automated |
+
+The original development screenshots record the container access settings and uploaded files. The [Azure implementation record](docs/azure-implementation.md) lists the evidence, file inventory, deployment blocker and remaining work. Screenshots are retained privately and are not yet included in this public repository.
+
+The working report uses local SQL Server. Blob storage is a parallel cloud copy at this milestone; an automated Blob-to-Azure-SQL-to-Power-BI pipeline remains to be implemented.
 
 ### Findings: 2026 Q2 compared with 2025 Q2
 
@@ -98,6 +112,7 @@ In SSMS, duplicate-key, missing-quarter and national-total mismatch queries retu
 | [Original AS-IS map](process/UK_Automotive_Reporting_AS_IS.drawio) | Original Google Sheets process map, preserved unchanged |
 | [Stage 1 Power BI report](powerbi/UK_Automotive_Transition_Stage1.pbix) | Stage 1 report with imported aggregate data |
 | [Stage 1 validation](docs/stage1-review.md) | Model checks, reconciliation and limitations |
+| [Azure implementation](docs/azure-implementation.md) | Cloud storage work, upload inventory, deployment blocker and remaining architecture |
 
 Script 01 creates the database only. Table creation/import was performed manually in SSMS; the repository does not yet supply a complete table-DDL/load pipeline.
 
