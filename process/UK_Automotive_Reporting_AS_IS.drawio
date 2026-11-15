@@ -1,0 +1,133 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="dfAzblHk4cgBbDSNkExL">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-5" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Start: Data pack received" vertex="1">
+          <mxGeometry height="80" width="120" x="365" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-7" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Extract the downloaded data pack" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-9" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-10" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Find the quarterly registrations CSV in the processed folder" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-12" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Import the CSV into Google Sheets" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-14" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Run the data quality checks" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-16" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-17" connectable="0" parent="dHFsSTXmoTZL84GNmgU7-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-19" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-20" connectable="0" parent="dHFsSTXmoTZL84GNmgU7-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Did all listed checks pass?" vertex="1">
+          <mxGeometry height="80" width="80" x="385" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-27" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Build UK Market Quarterly pivot" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-24" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="dHFsSTXmoTZL84GNmgU7-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="540" />
+              <mxPoint x="505" y="540" />
+              <mxPoint x="505" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Investigate and resolve the failed check" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-2" edge="1" parent="1" source="dHFsSTXmoTZL84GNmgU7-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="43t83HkAjLXv2PwuFizw-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Build Brand Registrations Quarterly pivot" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="dHFsSTXmoTZL84GNmgU7-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Current position:Q2 2026 market shares and BYD year-on-year analysis complete. Finding and scope note drafted. Next: review the report." vertex="1">
+          <mxGeometry height="50" width="310" x="500" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-5" edge="1" parent="1" source="43t83HkAjLXv2PwuFizw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="43t83HkAjLXv2PwuFizw-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value=" &lt;strong&gt;Calculate market shares and year-on-year changes&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-7" edge="1" parent="1" source="43t83HkAjLXv2PwuFizw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="43t83HkAjLXv2PwuFizw-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Write findings, limitations and source note" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-9" edge="1" parent="1" source="43t83HkAjLXv2PwuFizw-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="43t83HkAjLXv2PwuFizw-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Review figures, wording and sources" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-11" edge="1" parent="1" source="43t83HkAjLXv2PwuFizw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="43t83HkAjLXv2PwuFizw-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-15" edge="1" parent="1" source="43t83HkAjLXv2PwuFizw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="43t83HkAjLXv2PwuFizw-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-16" connectable="0" parent="43t83HkAjLXv2PwuFizw-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.0494" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-8" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Did the report pass review?" vertex="1">
+          <mxGeometry height="90" width="125" x="365" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-13" edge="1" parent="1" source="43t83HkAjLXv2PwuFizw-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="43t83HkAjLXv2PwuFizw-6">
+          <mxGeometry relative="1" x="-0.0737" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Correct the identified issues" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="1195" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="43t83HkAjLXv2PwuFizw-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="End: Checked report ready for the manager" vertex="1">
+          <mxGeometry height="90" width="120" x="365" y="1350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

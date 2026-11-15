@@ -1,0 +1,36 @@
+# Environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+# Secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+secrets/
+private/
+*.pem
+*.key
+.vscode/
+# Local source and generated data
+/raw/
+/processed/
+/outputs/
+# Power BI binaries: only the reviewed Stage 1 baseline is published
+*.pbix
+*.pbit
+!/powerbi/UK_Automotive_Transition_Stage1.pbix
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/unappliedChanges.json
+*_files/
+# Database files, logs, temporary files
+*.bak
+*.mdf
+*.ldf
+*.log
+*.tmp
+~$*
+.DS_Store
+Thumbs.db
