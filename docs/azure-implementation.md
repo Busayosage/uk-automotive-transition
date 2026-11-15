@@ -24,7 +24,16 @@ The project retains three original Azure portal screenshots from 11 November 202
 - 08:37:55: source container showing its uploaded input CSV.
 - 08:37:20: reporting container showing the three output CSVs.
 
-The screenshots have not been added to this public repository. This implementation record describes the recorded evidence; it does not substitute for public visual evidence or a live resource inspection.
+The following original screenshots document the development milestone. They are preserved unchanged and show the recorded portal state on 11 November 2026, rather than a fresh live inspection.
+
+### Private containers
+![Azure portal showing private source and reporting containers](../evidence/azure/private-containers.png)
+
+### Prepared input uploaded to source
+![Azure source container showing the prepared first-registration input CSV](../evidence/azure/source-upload.png)
+
+### Reporting outputs uploaded
+![Azure reporting container showing the three reporting CSVs](../evidence/azure/reporting-uploads.png)
 
 ## Implemented and planned paths
 | Component | Current implementation | Remaining work |
@@ -43,4 +52,4 @@ Azure SQL deployment encountered subscription/region restrictions during attempt
 Local SQL Server was used to continue validation, modelling and reporting while the cloud database work remained open. Resolving Azure deployment eligibility, implementing the cloud load and testing refresh remain part of the wider project.
 
 ## Publication boundary
-Credentials, access keys, connection strings containing secrets and subscription/account identifiers are not included. No deployment template or cloud automation script is presented as an implemented deliverable; the storage setup and uploads were manual.
+The screenshots include the storage resource name, container names, blob filenames and upload details. No access-key values, secret connection strings or subscription identifiers are shown. No deployment template or cloud automation script is presented as an implemented deliverable; the storage setup and uploads were manual.

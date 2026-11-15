@@ -34,7 +34,7 @@ Azure Blob Storage is a completed part of Stage 1: two private containers hold t
 | Database and report | Local SQL Server validation and Power BI Import model | Local database connection |
 | Azure SQL and refresh | Deployment attempts and resource-provider troubleshooting | Subscription/region blocker; not deployed or automated |
 
-The original development screenshots record the container access settings and uploaded files. The [Azure implementation record](docs/azure-implementation.md) lists the evidence, file inventory, deployment blocker and remaining work. Screenshots are retained privately and are not yet included in this public repository.
+The [original Azure screenshots](docs/azure-implementation.md#evidence) show the private container settings and all four uploaded CSVs. The [Azure implementation record](docs/azure-implementation.md) documents the file inventory, deployment blocker and remaining work.
 
 The working report uses local SQL Server. Blob storage is a parallel cloud copy at this milestone; an automated Blob-to-Azure-SQL-to-Power-BI pipeline remains to be implemented.
 
