@@ -2,8 +2,17 @@
 ## UK electrification and BYD market analysis
 
 **Author: Seun Oseola**  
-**Current milestone: Stage 1 — working analytical report and documentation**  
+**Current milestone: Stage 2 — dashboard redesign implemented; release review in progress**  
+**Last checkpoint: 23 November 2026**  
 **Reporting coverage: 2019 Q1–2026 Q2**
+
+### Stage 2 checkpoint
+
+The redesigned report now includes an **Executive Overview**, **UK Market Overview**, **BYD Performance** and **Validation** page. It adds consistent navigation, synchronised quarter selection, year-on-year comparisons, explanatory tooltips and DAX-generated insight text. Full-history trends retain the complete 2019 Q1–2026 Q2 context.
+
+Development validation records report **34 benchmark checks**, **9 model checks** and **2,822 checks against separate calculations from the prepared data** passing. These are report-consistency checks, not a fresh verification of the original source release. See the [Stage 2 technical summary](docs/stage2-summary.md) for scope, definitions and evidence boundaries.
+
+The downloadable PBIX below remains the preserved **Stage 1 baseline**. The Stage 2 report files and validation exports have not yet been added to this repository. Video demonstrations are prepared and awaiting final review; no Stage 2 video is published here.
 
 ### Business question
 
@@ -18,11 +27,11 @@ This project combines spreadsheet exploration, Python preparation, Azure Blob St
 | Initial exploration | Imported the make/fuel/quarter extract into Google Sheets; checked record counts, labels, numeric values, negatives, duplicates and quarter coverage; built national and brand pivots | Completed during development |
 | Python | Prepared national totals, BEV share, a detailed brand/fuel table and a quarter dimension; reconciled reporting totals | Original script included |
 | SQL Server | Created the local database, manually imported the three CSVs using SSMS and checked totals, duplicate keys and quarter references | Original scripts included |
-| Power BI | Built the shared-quarter model, UK overview and BYD performance pages; tested quarter selection against comparison figures | Original Stage 1 PBIX included |
+| Power BI | Preserved the Stage 1 baseline; developed the Stage 2 executive overview, redesigned detail pages, navigation and dynamic insights | Stage 1 PBIX included; Stage 2 documented, report files pending publication review |
 | Process mapping | Mapped the spreadsheet reporting workflow, including validation and review loops | Original editable map included unchanged |
 | Azure Blob | Created private source/reporting containers and manually uploaded the input CSV and three reporting CSVs | Completed as a storage step |
 | Azure SQL and automated refresh | Cloud database deployment encountered subscription/region restrictions; reporting continued using local SQL Server | Unfinished |
-| Publication | Preserved a local Stage 1 PBIX and versioned the original scripts, map, report and project explanation | In progress |
+| Publication | Versioned the Stage 1 baseline and documented the Stage 2 checkpoint | Stage 2 release review in progress |
 
 ### Azure cloud storage and delivery architecture
 
@@ -112,6 +121,7 @@ In SSMS, duplicate-key, missing-quarter and national-total mismatch queries retu
 | [Original AS-IS map](process/UK_Automotive_Reporting_AS_IS.drawio) | Original Google Sheets process map, preserved unchanged |
 | [Stage 1 Power BI report](powerbi/UK_Automotive_Transition_Stage1.pbix) | Stage 1 report with imported aggregate data |
 | [Stage 1 validation](docs/stage1-review.md) | Model checks, reconciliation and limitations |
+| [Stage 2 technical summary](docs/stage2-summary.md) | Redesigned pages, calculation behaviour, validation scope and remaining work |
 | [Azure implementation](docs/azure-implementation.md) | Cloud storage work, upload inventory, deployment blocker and remaining architecture |
 
 Script 01 creates the database only. Table creation/import was performed manually in SSMS; the repository does not yet supply a complete table-DDL/load pipeline.
@@ -134,7 +144,7 @@ The script writes the three CSVs into `outputs/`. It expects the two benchmark q
 
 To reproduce the SQL checks, create/select `uk_automotive`, import the three reporting CSVs into their corresponding `dbo` tables with appropriate column types, then run scripts 02–04.
 
-### Power BI model and report behaviour
+### Preserved Stage 1 model and report behaviour
 
 The report connects to local SQL Server using Import mode. `dim_quarter[quarter]` filters both reporting facts through active, single-direction one-to-many relationships. There is no direct relationship between the two fact tables.
 
@@ -170,10 +180,10 @@ The original map is published unchanged at [process/UK_Automotive_Reporting_AS_I
 ### Three-stage portfolio plan
 
 1. **Stage 1 — working solution:** preserve and document the current preparation, SQL checks, report, original process map and findings; prepare a LinkedIn walkthrough.
-2. **Stage 2 — dashboard design:** develop layout, navigation and chart clarity towards a consistent professional design, keeping accurate calculations and showing the before/after.
+2. **Stage 2 — dashboard design:** redesigned executive and detail pages implemented, with navigation, dynamic DAX insights and development validation recorded; release and video review in progress.
 3. **Stage 3 — deeper analysis and delivery:** extend comparisons and business questions; implement and document refresh/deployment improvements as they are completed.
 
-Professional redesign, broader analysis and automated cloud delivery are planned subsequent milestones.
+The Stage 2 redesign is implemented in the working report. Broader analysis and automated cloud delivery remain Stage 3 work; the overall research project is not complete.
 
 ### Limitations and publication controls
 
